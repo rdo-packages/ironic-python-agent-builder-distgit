@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "4725a2f8_598c99c7",
+        "filename": "openstack-ironic-python-agent-builder.spec",
+        "patchSetId": 2
+      },
+      "lineNbr": 50,
+      "author": {
+        "id": 128
+      },
+      "writtenOn": "2019-08-13T15:47:06Z",
+      "side": 1,
+      "message": "sorry, one more. This should be:\n\n%license LICENSE",
+      "range": {
+        "startLine": 50,
+        "startChar": 0,
+        "endLine": 50,
+        "endChar": 4
+      },
+      "revId": "0e50065439f1339f22e84256bf3b03c65bbe0263",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    }
+  ]
+}
