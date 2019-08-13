@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "6e4ae804_11d9c199",
+        "filename": "openstack-ironic-python-agent-builder.spec",
+        "patchSetId": 1
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 78
+      },
+      "writtenOn": "2019-08-13T14:28:35Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "4d2e28d8_2a5d5c9e",
+      "revId": "c38d40f3b82de2e85b0d97915a84d3c2d2943393",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "3d20734e_25aad232",
         "filename": "openstack-ironic-python-agent-builder.spec",
         "patchSetId": 1
@@ -30,6 +48,30 @@
       "writtenOn": "2019-08-13T14:09:17Z",
       "side": 1,
       "message": "It\u0027s a good practice in RDO to use autosetup to make patching easier:\n\n%autosetup -n ironic-python-agent-builder-%{upstream_version} -S git\n\nIt needs to add git as BuildRequires.",
+      "range": {
+        "startLine": 37,
+        "startChar": 0,
+        "endLine": 37,
+        "endChar": 60
+      },
+      "revId": "c38d40f3b82de2e85b0d97915a84d3c2d2943393",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "e5182b33_52cd8fd5",
+        "filename": "openstack-ironic-python-agent-builder.spec",
+        "patchSetId": 1
+      },
+      "lineNbr": 37,
+      "author": {
+        "id": 78
+      },
+      "writtenOn": "2019-08-13T14:28:35Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "3d20734e_25aad232",
       "range": {
         "startLine": 37,
         "startChar": 0,
