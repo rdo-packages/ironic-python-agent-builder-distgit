@@ -1,15 +1,3 @@
-# Macros for py2/py3 compatibility
-%if 0%{?fedora} || 0%{?rhel} > 7
-%global pyver 3
-%else
-%global pyver 2
-%endif
-
-%global pyver_bin python%{pyver}
-%global pyver_sitelib %python%{pyver}_sitelib
-%global pyver_install %py%{pyver}_install
-%global pyver_build %py%{pyver}_build
-# End of macros for py2/py3 compatibility
 
 %{!?upstream_version: %global upstream_version %{version}%{?milestone}}
 
@@ -24,9 +12,9 @@ Source0:        https://tarballs.openstack.org/ironic-python-agent-builder/ironi
 
 BuildArch:      noarch
 BuildRequires:  git
-BuildRequires:  python%{pyver}-devel
-BuildRequires:  python%{pyver}-setuptools
-BuildRequires:  python%{pyver}-pbr
+BuildRequires:  python3-devel
+BuildRequires:  python3-setuptools
+BuildRequires:  python3-pbr
 
 Requires:       diskimage-builder
 
@@ -38,10 +26,10 @@ as a diskimage-builder element for it.
 %autosetup -n ironic-python-agent-builder-%{upstream_version} -S git
 
 %build
-%{pyver_build}
+%{py3_build}
 
 %install
-%{pyver_install}
+%{py3_install}
 
 # remove .git-keep-empty files that get installed
 find %{buildroot} -name .git-keep-empty | xargs rm -f
@@ -51,7 +39,7 @@ find %{buildroot} -name .git-keep-empty | xargs rm -f
 %doc README.rst
 %doc AUTHORS
 %doc ChangeLog
-%{pyver_sitelib}/ironic_python_agent_builder*
+%{python3_sitelib}/ironic_python_agent_builder*
 %{_bindir}/ironic-python-agent-builder
 %{_datadir}/ironic-python-agent-builder
 
