@@ -29,7 +29,7 @@ BuildRequires:  python3-devel
 BuildRequires:  python3-setuptools
 BuildRequires:  python3-pbr
 
-Requires:       diskimage-builder
+Requires:       diskimage-builder >= 3.4.0
 
 %description
 This package contains a script to build an ironic-python-agent builder, as well
