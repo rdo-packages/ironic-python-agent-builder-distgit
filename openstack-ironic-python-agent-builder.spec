@@ -41,6 +41,8 @@ as a diskimage-builder element for it.
 %{gpgverify}  --keyring=%{SOURCE102} --signature=%{SOURCE101} --data=%{SOURCE0}
 %endif
 %autosetup -n ironic-python-agent-builder-%{upstream_version} -S git
+# Let RPM handle the dependencies
+rm -f {,test-}requirements.txt
 
 %build
 %{py3_build}
