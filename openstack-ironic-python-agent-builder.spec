@@ -15,7 +15,7 @@
 
 Name:           openstack-ironic-python-agent-builder
 Summary:        Builder of ironic-python-agent ramdisk images
-Version:        1.0.0
+Version:        2.7.0
 Release:        1%{?dist}
 License:        ASL 2.0
 Group:          System Environment/Base
@@ -56,6 +56,9 @@ find %{buildroot} -name .git-keep-empty | xargs rm -f
 %{_datadir}/ironic-python-agent-builder
 
 %changelog
+* Mon Feb 14 2022 RDO <dev@lists.rdoproject.org> 2.7.0-1
+- Update to 2.7.0
+
 * Thu Oct 10 2019 RDO <dev@lists.rdoproject.org> 1.0.0-1
 - Update to 1.0.0
 
