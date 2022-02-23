@@ -19,6 +19,10 @@ Source101:        https://tarballs.openstack.org/ironic-python-agent-builder/iro
 Source102:        https://releases.openstack.org/_static/%{sources_gpg_sign}.txt
 %endif
 
+%if 0%{?rhosp}
+Epoch:		1
+%endif
+
 BuildArch:      noarch
 
 # Required for tarball sources verification
