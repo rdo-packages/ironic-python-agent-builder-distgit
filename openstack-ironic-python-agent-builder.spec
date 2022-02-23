@@ -22,6 +22,10 @@ Group:          System Environment/Base
 URL:            https://docs.openstack.org/ironic-python-agent-builder
 Source0:        https://tarballs.openstack.org/ironic-python-agent-builder/ironic-python-agent-builder-%{upstream_version}.tar.gz
 
+%if 0%{?rhosp}
+Epoch:		1
+%endif
+
 BuildArch:      noarch
 BuildRequires:  git
 BuildRequires:  python%{pyver}-devel
