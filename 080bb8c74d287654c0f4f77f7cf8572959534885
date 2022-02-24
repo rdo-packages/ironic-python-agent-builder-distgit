@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "49f94668_38538a1c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 558
+      },
+      "writtenOn": "2022-02-24T10:52:20Z",
+      "side": 1,
+      "message": "same issue we had a couple of times downstream for openshift, lgtm",
+      "revId": "080bb8c74d287654c0f4f77f7cf8572959534885",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    }
+  ]
+}
