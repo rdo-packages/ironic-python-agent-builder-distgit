@@ -3,6 +3,8 @@
 
 %{!?upstream_version: %global upstream_version %{version}%{?milestone}}
 
+%global rhosp 0
+
 Name:           openstack-ironic-python-agent-builder
 Summary:        Builder of ironic-python-agent ramdisk images
 Version:        XXX
