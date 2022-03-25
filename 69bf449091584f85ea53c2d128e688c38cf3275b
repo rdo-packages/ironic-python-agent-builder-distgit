@@ -1,0 +1,9 @@
+Code-Review+2: Riccardo Pittau <elfosardo@gmail.com>
+Code-Review+2: Julia Kreger <jkreger@gmail.com>
+Workflow+1: Julia Kreger <jkreger@gmail.com>
+Verified+2: Zuul CI <zuul@review.rdoproject.org>
+Submitted-by: Zuul CI <zuul@review.rdoproject.org>
+Submitted-at: Fri, 25 Mar 2022 18:32:52 +0000
+Reviewed-on: https://review.rdoproject.org/r/c/openstack/ironic-python-agent-builder-distgit/+/40915
+Project: openstack/ironic-python-agent-builder-distgit
+Branch: refs/heads/wallaby-rdo
