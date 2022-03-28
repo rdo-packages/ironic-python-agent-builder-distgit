@@ -33,6 +33,23 @@
       "message": "recheck",
       "revId": "d20b598a22e5035c018122393d97decd77a999a8",
       "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ce048989_646554de",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 363
+      },
+      "writtenOn": "2022-03-28T03:33:03Z",
+      "side": 1,
+      "message": "CentOS mirror issue :/ ",
+      "revId": "d20b598a22e5035c018122393d97decd77a999a8",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
     }
   ]
 }
