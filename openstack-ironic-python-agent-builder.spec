@@ -68,3 +68,4 @@ find %{buildroot} -name .git-keep-empty | xargs rm -f
 * Thu Oct 10 2019 RDO <dev@lists.rdoproject.org> 1.0.0-1
 - Update to 1.0.0
 
+# REMOVEME: error caused by commit https://opendev.org/openstack/ironic-python-agent-builder/commit/93292bfd5740dda108da40dc960940c9b7502ffe
