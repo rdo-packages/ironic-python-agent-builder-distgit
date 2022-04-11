@@ -16,6 +16,24 @@
       "message": "Duplicate of https://review.rdoproject.org/r/c/openstack/ironic-python-agent-builder-distgit/+/40640 ? Should it be dropped?",
       "revId": "bb917a16597e299f28e345033a1be4acbcb03da2",
       "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1f12ddb5_4fee5f2b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 635
+      },
+      "writtenOn": "2022-04-11T14:04:17Z",
+      "side": 1,
+      "message": "Yes, let\u0027s drop it",
+      "parentUuid": "9052a039_9efe6d12",
+      "revId": "bb917a16597e299f28e345033a1be4acbcb03da2",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
     }
   ]
 }
