@@ -16,6 +16,23 @@
       "message": "Waiting for decision on https://review.opendev.org/c/openstack/releases/+/895576",
       "revId": "bdca38f70c5a352931112f73cc89faadfdc04641",
       "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "0cced81d_3563a1fa",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 635
+      },
+      "writtenOn": "2023-09-21T13:48:02Z",
+      "side": 1,
+      "message": "upstream cut the branch from 5.2.0 https://review.opendev.org/c/openstack/releases/+/895954, so we can merge",
+      "revId": "bdca38f70c5a352931112f73cc89faadfdc04641",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
     }
   ]
 }
