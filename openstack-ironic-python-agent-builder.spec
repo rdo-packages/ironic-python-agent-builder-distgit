@@ -2,6 +2,8 @@
 %global sources_gpg_sign 0x2426b928085a020d8a90d0d879ab7008d0896c8a
 
 %{!?upstream_version: %global upstream_version %{version}%{?milestone}}
+%{?dlrn: %global tarsources ironic-python-agent-builder}
+%{!?dlrn: %global tarsources ironic_python_agent_builder}
 # we are excluding some runtime reqs from automatic generator
 %global excluded_reqs diskimage-builder
 # we are excluding some BRs from automatic generator
@@ -16,10 +18,10 @@ Release:        XXX
 License:        Apache-2.0
 Group:          System Environment/Base
 URL:            https://docs.openstack.org/ironic-python-agent-builder
-Source0:        https://tarballs.openstack.org/ironic-python-agent-builder/ironic-python-agent-builder-%{upstream_version}.tar.gz
+Source0:        https://tarballs.openstack.org/ironic-python-agent-builder/%{tarsources}-%{upstream_version}.tar.gz
 # Required for tarball sources verification
 %if 0%{?sources_gpg} == 1
-Source101:        https://tarballs.openstack.org/ironic-python-agent-builder/ironic-python-agent-builder-%{upstream_version}.tar.gz.asc
+Source101:        https://tarballs.openstack.org/ironic-python-agent-builder/%{tarsources}-%{upstream_version}.tar.gz.asc
 Source102:        https://releases.openstack.org/_static/%{sources_gpg_sign}.txt
 %endif
 
@@ -49,7 +51,7 @@ as a diskimage-builder element for it.
 %if 0%{?sources_gpg} == 1
 %{gpgverify}  --keyring=%{SOURCE102} --signature=%{SOURCE101} --data=%{SOURCE0}
 %endif
-%autosetup -n ironic-python-agent-builder-%{upstream_version} -S git
+%autosetup -n %{tarsources}-%{upstream_version} -S git
 
 sed -i /^[[:space:]]*-c{env:.*_CONSTRAINTS_FILE.*/d tox.ini
 sed -i "s/^deps = -c{env:.*_CONSTRAINTS_FILE.*/deps =/" tox.ini
