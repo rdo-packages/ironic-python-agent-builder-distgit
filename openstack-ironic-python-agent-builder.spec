@@ -94,3 +94,4 @@ find %{buildroot} -name .git-keep-empty | xargs rm -f
 %{_datadir}/ironic-python-agent-builder
 
 %changelog
+# REMOVEME: error caused by commit https://opendev.org/openstack/ironic-python-agent-builder/commit/059b0bdf5d1f80b56ed811a055139c62c280f721
