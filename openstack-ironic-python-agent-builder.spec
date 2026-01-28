@@ -1,5 +1,5 @@
 %{!?sources_gpg: %{!?dlrn:%global sources_gpg 1} }
-%global sources_gpg_sign 0xf8675126e2411e7748dd46662fc2093e4682645f
+%global sources_gpg_sign 0x22284f69d9eccdf3df7819791c711af193ff8e54
 
 %{!?upstream_version: %global upstream_version %{version}%{?milestone}}
 # we are excluding some runtime reqs from automatic generator
@@ -11,7 +11,7 @@
 
 Name:           openstack-ironic-python-agent-builder
 Summary:        Builder of ironic-python-agent ramdisk images
-Version:        5.4.0
+Version:        5.4.1
 Release:        1%{?dist}
 License:        Apache-2.0
 Group:          System Environment/Base
@@ -92,6 +92,9 @@ find %{buildroot} -name .git-keep-empty | xargs rm -f
 %{_datadir}/ironic-python-agent-builder
 
 %changelog
+* Wed Jan 28 2026 RDO <dev@lists.rdoproject.org> 1:5.4.1-1
+- Update to 5.4.1
+
 * Mon Sep 23 2024 RDO <dev@lists.rdoproject.org> 1:5.4.0-1
 - Update to 5.4.0
 
